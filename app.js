@@ -122,7 +122,13 @@ function getRecord(S, B, V) {
   data.classList.add("listData");
 
   value.innerText = V;
-  data.innerText = `${S}S ${B}B`;
+  if (S == DIFFICULTY) {
+    data.innerText = "You Win";
+  } else if (S == 0 && B == 0) {
+    data.innerText = "OUT";
+  } else {
+    data.innerText = `${S}S ${B}B`;
+  }
 
   li.appendChild(value);
   li.appendChild(data);
