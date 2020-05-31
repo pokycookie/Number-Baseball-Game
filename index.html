@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Baseball</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__difficulty">
+        <div class="difficulty__title">
+          <span>Difficulty</span>
+        </div>
+        <div class="difficulty__item checked" data-difficulty="3">
+          <span>Easy</span>
+        </div>
+        <div class="difficulty__item" data-difficulty="4">
+          <span>Normal</span>
+        </div>
+        <div class="difficulty__item" data-difficulty="5">
+          <span>Hard</span>
+        </div>
+        <div class="difficulty__item" data-difficulty="8">
+          <span>Hell</span>
+        </div>
+      </div>
+      <div class="nav__controller">
+        <div class="giveup-Btn">
+          <span>Give Up</span>
+        </div>
+        <div class="restart-Btn">
+          <span>Restart</span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="main__info">
+        <span class="info__span">INFO</span>
+      </div>
+      <form class="main__form">
+        <input type="text" class="form__input" autofocus />
+      </form>
+      <div class="main__board">
+        <div class="main__board__box">
+          <div class="main__board__numberBox">
+            <span class="numberBox__item normal">0</span>
+            <span class="numberBox__item normal">1</span>
+            <span class="numberBox__item normal">2</span>
+            <span class="numberBox__item normal">3</span>
+            <span class="numberBox__item normal">4</span>
+            <span class="numberBox__item normal">5</span>
+            <span class="numberBox__item normal">6</span>
+            <span class="numberBox__item normal">7</span>
+            <span class="numberBox__item normal">8</span>
+            <span class="numberBox__item normal">9</span>
+          </div>
+          <div class="main__board__inputBox">
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+            <input type="text" class="main__board__input" />
+          </div>
+          <div class="main__board__drawBox invisi">
+            <canvas class="canvas"></canvas>
+          </div>
+        </div>
+        <div class="main__board__controller">
+          <div class="textBoardBtn Btn checked" data-mode="1">
+            <span>Text</span>
+          </div>
+          <div class="drawBoardBtn Btn" data-mode="2">
+            <span>Draw</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="board">
+      <div class="board__record">
+        <div class="record__title">Record</div>
+        <ul class="record__list"></ul>
+      </div>
+      <div class="board__try">
+        <span class="try__title">Try</span>
+        <span class="try__number">0</span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
